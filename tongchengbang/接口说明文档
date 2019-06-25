@@ -1,0 +1,27 @@
+1、添加广告
+    接口地址：http://127.0.0.1/adv
+    请求方式：post
+    传递的参数：
+        advName:广告名称
+        advPic:广告图片
+        advType:广告类别  1、轮播图  2、轮播图底部 3、热门手机回收  4、优品精选
+        advHref:广告链接
+        orderNum：排序，数字越大越靠前。    当排序相同时，按照添加时间的倒序。、
+    返回的结果：
+        {
+            ok:1,
+            msg:"成功"
+        }
+1、获取广告
+    接口地址：http://127.0.0.1/adv
+    请求方式：get
+    传递的参数：
+       pageIndex:1
+    返回的结果：
+        {
+            ok:1,
+            msg:"成功",
+            advList,
+            pageIndex,
+            pageSum
+        }
